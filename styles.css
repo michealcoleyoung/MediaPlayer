@@ -2,6 +2,8 @@ html, body {
 	/*background-color: #91a3c9;*/
 	height: 100%;
 	background-position: center;
+	background-color: #c3edf1;
+	background-image: url('https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif');
 }
 
 .mediaPlayer {
@@ -9,12 +11,23 @@ html, body {
 	border: 2px solid black;
 	padding: 4px;
 	background-color: white;
+	position: center;
+	background: linear-gradient(#7a7e82, #9bd7e2);
+	box-shadow: 20px 20px 20px;
 }
 
 .play {
 	border-radius: 50%;
-	height: 100px;
-	width: 100px;
+	height: 80px;
+	width: 80px;
 	border: 2px solid black;
 	margin-left: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none !important;
+}
+
+.play:active {
+	position: relative;
+	top: 1px;
 }
