@@ -3,7 +3,7 @@ html, body {
 	height: 100%;
 	background-position: center;
 	background-color: #c3edf1;
-	background-image: url('https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif');
+	/*background-image: url('https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif');*/
 }
 
 .mediaPlayer {
@@ -27,7 +27,22 @@ html, body {
 	outline: none !important;
 }
 
+.pause {
+	border-radius: 50%;
+	height: 80px;
+	width: 80px;
+	border: 10px solid black;
+	margin-left: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	outline: none !important;
+}
+
 .play:active {
 	position: relative;
 	top: 1px;
+}
+
+.waveform {
+	background: blue;
 }
