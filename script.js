@@ -6,12 +6,15 @@
 function playAudio(id) {
 	// play and pause
 	var audio = document.getElementById(id);
-    if (audio.paused == true) {
+	var element = document.getElementById('play_pause');
+    if (audio.paused == true && element.className == "fas fa-play") {
         audio.play();
         audio.classList.toggle('pause');
+        element.className = "fas fa-pause";
  
     }else{
         audio.pause();
-        audio.currentTime = 0;
+        // audio.currentTime = 0;
+        element.className = "fas fa-play";
     }
 }
