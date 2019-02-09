@@ -1,8 +1,8 @@
 html, body {
-	/*background-color: #91a3c9;*/
+	background-color: #91a3c9;
 	height: 100%;
 	background-position: center;
-	background-color: #c3edf1;
+	/*background-color: #c3edf1;*/
 	/*background-image: url('https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif');*/
 }
 
@@ -27,11 +27,10 @@ html, body {
 	outline: none !important;
 }
 
-.play:active {
-	position: relative;
-	top: 1px;
-}
 
-.waveform {
-	background: blue;
+
+#seek {
+	border: 1px solid black;
+	width: 400px;
+	height: 8px;
 }
