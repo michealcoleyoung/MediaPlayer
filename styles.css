@@ -7,11 +7,11 @@ html, body {
 }
 
 .mediaPlayer {
+	display: inline-block;
 	margin: 50px;
 	border: 2px solid black;
 	padding: 4px;
 	background-color: white;
-	position: center;
 	background: linear-gradient(#7a7e82, #9bd7e2);
 	box-shadow: 20px 20px 20px;
 }
@@ -21,16 +21,19 @@ html, body {
 	height: 80px;
 	width: 80px;
 	border: 2px solid black;
-	margin-left: 5px;
+
 	cursor: pointer;
 	text-decoration: none;
 	outline: none !important;
 }
 
+progress {
+	width: 800px;
+	border: 2px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
 
-
-#seek {
-	border: 1px solid black;
-	width: 400px;
-	height: 8px;
+.inline-block-child {
+	display: inline-block;
 }

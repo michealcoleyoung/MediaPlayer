@@ -7,7 +7,7 @@ function playAudio(id) {
 	// play and pause
 	var audio = document.getElementById(id);
 	var element = document.getElementById('play_pause');
-    if (audio.paused == true && element.className == "fas fa-play") {
+    if (audio.paused == true && element.className == "fas fa-play") { 
         audio.play();
         audio.classList.toggle('pause');
         element.className = "fas fa-pause";
