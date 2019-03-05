@@ -21,7 +21,6 @@ html, body {
 	height: 80px;
 	width: 80px;
 	border: 2px solid black;
-
 	cursor: pointer;
 	text-decoration: none;
 	outline: none !important;
