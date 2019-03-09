@@ -22,8 +22,14 @@ function playAudio(id) {
 var aud = document.getElementById('song');
 aud.ontimeupdate = function() {setTime()};
 
+// takes the amount of seconds and keeps it in a two digit format such as 00 instead of 0
+function min_sec(num, size) {
+	var s = "00" + num;
+	return s. substr(s.length-size);
+}
+
 function setTime() {
-	var seconds = Math.floor(aud.currentTime % 60);	// converts milliseconds to seconds
+	var seconds = min_sec(Math.floor(aud.currentTime % 60), 2);	// converts milliseconds to seconds while calling min_sec function
 	var minutes = Math.floor(aud.currentTime / 60); // converts milliseconds to minutes
 	document.getElementById('time').innerHTML = `${minutes}:${seconds}`; // sets appropriate format of minutes:seconds 
 	document.getElementById('progress').value = aud.currentTime; // still needs work
