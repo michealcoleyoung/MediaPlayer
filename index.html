@@ -8,25 +8,21 @@
 </head>
 <body>
 
-	<audio controls onplay id="song" hidden>
+	<audio controls onplay id="song" >
   		<source src="audio/BuildMeUp.wav"/>
 	</audio>
 
 	<div class="container">
 	<div class="mediaPlayer">
 
-		<img src="images/BuildMeUp.png" width="100" height="100" class="child inline-block-child"> <!-- Artwork -->
+		<img src="images/BuildMeUp.png" width="100" height="100" > <!-- Artwork -->
 		<h1 class="bottomright" id="time"></h1>
-		<button class="play" onclick="playAudio('song');"><i class="fas fa-play class="child inline-block-child"" id="play_pause"></i></button>
-		<progress id="progress" value="0" max="100" class="child inline-block-child">
-	
-		<!-- Artist and song at the top center of media player-->
-		<!-- remember that time format should be 0:00/time of song -->
+		<button class="play" onclick="playAudio('song');"><i class="fas fa-play" id="play_pause"></i></button>
+		<progress id="progress" value="0" max="100"></progress>
+		<h5 class="text-center" style="margin-top: -30px;"><b>Build Me Up</b></h5>
+
 	</div>
 	</div>
-
-		
-
 
 <script type="text/javascript" src="script.js"></script>
 </body>

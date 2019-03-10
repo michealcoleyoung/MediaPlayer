@@ -20,6 +20,7 @@ function playAudio(id) {
 
 
 var aud = document.getElementById('song');
+// alert(Math.floor(aud.duration) / 100);
 aud.ontimeupdate = function() {setTime()};
 
 // takes the amount of seconds and keeps it in a two digit format such as 00 instead of 0
@@ -28,11 +29,13 @@ function min_sec(num, size) {
 	return s. substr(s.length-size);
 }
 
+// sets time and progress
 function setTime() {
 	var seconds = min_sec(Math.floor(aud.currentTime % 60), 2);	// converts milliseconds to seconds while calling min_sec function
-	var minutes = Math.floor(aud.currentTime / 60); // converts milliseconds to minutes
-	document.getElementById('time').innerHTML = `${minutes}:${seconds}`; // sets appropriate format of minutes:seconds 
-	document.getElementById('progress').value = aud.currentTime; // still needs work
+    var minutes = Math.floor(aud.currentTime / 60); // converts milliseconds to minutes
+    var duration = Math.floor(aud.duration);
+	document.getElementById('time').innerHTML = `<b>${minutes}:${seconds}/${parseInt(duration / 60, 10)}:${parseInt(duration % 60)}</b>`; // shows current time and full length of song
+	document.getElementById('progress').value = aud.currentTime / aud.duration; // sets track progress but still needs work
 }
 
 // function setTrackProgress() {

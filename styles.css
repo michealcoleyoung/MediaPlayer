@@ -2,7 +2,6 @@ html, body {
 	background-color: #91a3c9;
 	height: 100%;
 	background-position: center;
-	/*background-color: #c3edf1;*/
 	/*background-image: url('https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif');*/
 }
 
@@ -14,10 +13,10 @@ html, body {
 	background: linear-gradient(#7a7e82, #9bd7e2);
 	box-shadow: 20px 20px 20px;
 	position: absolute;
-    top: 50%; 
-    margin-top:-100px;
-    left: 40%; 
-    margin-left:-325px;
+  	top: 50%; 
+  	margin-top:-100px;
+  	left: 40%; 
+	margin-left:-325px;
 }
 
 .play {
