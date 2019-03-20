@@ -34,5 +34,15 @@ function setTime() {
 	document.getElementById('time').innerHTML = `<b>${minutes}:${seconds}/${parseInt(duration / 60, 10)}:${parseInt(duration % 60)}</b>`; // shows current time and full length of song
     document.getElementById('progress').value = aud.currentTime;   // sets progress bar to current track time
     document.getElementById('progress').max = aud.duration; // sets max track time value
+    var element = document.getElementById('play_pause');
+    
+    // once the song is complete the pause button switches back to play
+    if (aud.currentTime == aud.duration) {
+        element.className = "fas fa-play";
+    }
+
 }
 
+function sliderControls() {
+    
+}
