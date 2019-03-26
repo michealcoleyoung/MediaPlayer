@@ -15,12 +15,12 @@
 	<div class="container">
 	<div class="mediaPlayer">
 
-		<img src="images/BuildMeUp.png" width="100" height="100" > <!-- Artwork -->
-		<h1 class="bottomright" id="time"></h1>
+		<img src="images/BuildMeUp.png" width="100" height="100" > <!-- Artwork --><br>
+		<h1 class="bottomright" id="time"></h1> <!-- setTime handles the text in this field -->
 		<button class="play" onclick="playAudio('song');"><i class="fas fa-play" id="play_pause"></i></button>
 		<!-- <progress id="progress" value="0" max="100"></progress> -->
-		<input type="range" min="0" max="100" value="50" class="slider" id="progress"></input>
-		<h5 class="text-center" style="margin-top: -30px;"><b>Build Me Up</b></h5>
+		<input type="range" min="0" max="100" value="0" class="slider" id="progress" onclick="sliderControls();"></input><br>
+		<h5 class="text-center"><b>Build Me Up</b></h5>
 
 	</div>
 	</div>

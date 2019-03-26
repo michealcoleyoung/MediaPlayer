@@ -13,9 +13,6 @@ html, body {
 	background: linear-gradient(#7a7e82, #9bd7e2);
 	box-shadow: 20px 20px 20px;
 	position: absolute;
-  	top: 50%; 
-  	margin-top:-100px;
-  	left: 40%; 
 	margin-left:-325px;
 }
 
@@ -29,24 +26,28 @@ html, body {
 	outline: none !important;
 }
 
-progress {
+/* progress {
 	width: 800px;
 	border: 2px solid black;
 	margin-left: auto;
 	margin-right: auto;
 	cursor: pointer;
-}
+} */
 
 .inline-block-child {
 	display: inline-block;
 }
 
-.bottomright {
+/* .bottomright {
   position: absolute;
   bottom: 8px;
   right: 16px;
   font-size: 18px;
-}
+} */
 
 /*create a unique design for the media player
 something simple but appealing*/
+
+.slider {
+	width: 100%;
+}
