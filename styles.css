@@ -5,15 +5,13 @@ html, body {
 	/*background-image: url('https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif');*/
 }
 
-.mediaPlayer {
-	display: inline-block;
+.media-player {
 	border: 2px solid black;
 	padding: 4px;
 	background-color: white;
 	background: linear-gradient(#7a7e82, #9bd7e2);
 	box-shadow: 20px 20px 20px;
-	position: absolute;
-	margin-left:-325px;
+	border-radius: 10px;
 }
 
 .play {
@@ -24,6 +22,12 @@ html, body {
 	cursor: pointer;
 	text-decoration: none;
 	outline: none !important;
+	display: inline-block; 
+}
+
+.container {
+	top: 50%; margin-top:-100px;
+	position: relative;
 }
 
 /* progress {
@@ -34,16 +38,9 @@ html, body {
 	cursor: pointer;
 } */
 
-.inline-block-child {
+.side {
 	display: inline-block;
 }
-
-/* .bottomright {
-  position: absolute;
-  bottom: 8px;
-  right: 16px;
-  font-size: 18px;
-} */
 
 /*create a unique design for the media player
 something simple but appealing*/
