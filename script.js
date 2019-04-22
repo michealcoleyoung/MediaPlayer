@@ -46,6 +46,11 @@ function setTime() {
 }
 
 
-function sliderControls() {
+function audioSeek() {
+    let slider = document.getElementById('progress');
+    let seekto = aud.duration * (slider.value / 100);
+    aud.currentTime = seekto;
+    var nt = aud.currentTime * (100 / aud.duration);
+    slider.value = nt;
     // seeks current time from wherever the slider is located during the song
 }

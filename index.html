@@ -21,11 +21,11 @@
 
 		<div class="side">
 		<button class="play" onclick="playAudio('song');"><i class="fas fa-play" id="play_pause"></i></button>
-		</div><br>
+		</div>
 
 		<!-- <progress id="progress" value="0" max="100"></progress> -->
 		
-		<input type="range" min="0" max="100" value="0" class="slider" id="progress"></input> <!-- slider -->
+		<input type="range" min="0" max="100" value="0" class="slider" id="progress" onchange="audioSeek();"></input> <!-- slider -->
 
 
 		<h5 class="text-center"><b>Build Me Up</b></h5>
