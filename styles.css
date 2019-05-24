@@ -11,7 +11,7 @@ html, body {
 	background-color: white;
 	background: linear-gradient(#7a7e82, #9bd7e2);
 	box-shadow: 20px 20px 20px;
-	border-radius: 10px;
+	border-radius: 2px;
 }
 
 .play {
