@@ -28,11 +28,12 @@ function playAudio(id) {
 
 // takes the amount of seconds and keeps it in a two digit format such as 00 instead of 0
 function min_sec(num, size) {
-	let s = "00" + num;
-	return s. substr(s.length-size);
+	let seconds = "00" + num;
+	return seconds.substr(seconds.length-size);
 }
 
 let aud = document.getElementById('song');
+// aud.muted = true; 
 
 // creates a function expression that will occur automatically without being controlled by an event
 window.onload = aud.ontimeupdate = function() {setTime()};
@@ -54,10 +55,10 @@ function setTime() {
 
 }
 
-
 let seekslider = document.getElementById('progress');
 
 function audioSeek() {
+
     let seekto = aud.duration * (seekslider.value / 100);
     aud.currentTime = seekto;
 }
@@ -67,3 +68,4 @@ function seekUpdate() {
     let newTime = aud.currentTime * (100 / aud.duration);
     seekslider.value = newTime;
 }
+

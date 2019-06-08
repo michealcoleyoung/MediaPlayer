@@ -8,7 +8,7 @@
 </head>
 <body>
 
-	<audio controls onplay id="song" > <!-- remember to add hidden once you figure out seeking function -->
+	<audio controls onplay id="song"> <!-- remember to add hidden once you figure out seeking function -->
   		<source src="audio/BuildMeUp.wav"/>
 	</audio>
 
@@ -20,12 +20,12 @@
 		</div>
 
 		<div class="side">
-		<button class="play" onclick="playAudio('song');"><i class="fas fa-play" id="play_pause"></i></button>
+		<button class="play" onclick="playAudio(this, 'song');"><i class="fas fa-play" id="play_pause"></i></button>
 		</div>
 
 		<!-- <progress id="progress" value="0" max="100"></progress> -->
 		
-		<input type="range" min="0" max="100" value="0" class="slider" id="progress" onchange="audioSeek();"></input> 
+		<input type="range" min="0" max="100" value="0" class="slider" id="progress"></input> 
 
 
 		<h5 class="text-center"><b>Build Me Up</b></h5>
@@ -35,7 +35,7 @@
 	</div>
 	</div>
 
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="newscript.js"></script>
 
 </body>
 </html>
