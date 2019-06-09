@@ -1,17 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 html, body {
-	background-color: #91a3c9;
+	background-color: #b2a48f;
 	height: 100%;
 	background-position: center;
-	/*background-image: url('https://media.giphy.com/media/bFmQVLnU4Smk/giphy.gif');*/
 }
 
 .media-player {
 	border: 2px solid black;
 	padding: 4px;
 	background-color: white;
-	background: linear-gradient(#7a7e82, #9bd7e2);
+	background: #d3cbbf;
 	box-shadow: 20px 20px 20px;
-	border-radius: 2px;
+	border-radius: 5px;
 }
 
 .play {
@@ -26,25 +27,22 @@ html, body {
 }
 
 .container {
-	top: 50%; margin-top:-100px;
+	margin-top: 300px;
 	position: relative;
 }
-
-/* progress {
-	width: 800px;
-	border: 2px solid black;
-	margin-left: auto;
-	margin-right: auto;
-	cursor: pointer;
-} */
 
 .side {
 	display: inline-block;
 }
 
-/*create a unique design for the media player
-something simple but appealing*/
-
 .slider {
 	width: 100%;
+}
+
+img {
+	border: 1px solid black;
+}
+
+.fas fa-play {
+	font-size: 20px;
 }
